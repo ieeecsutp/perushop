@@ -1,3 +1,8 @@
+---
+import EmailIcon from './icons/EmailIcon.astro';
+import PhoneIcon from './icons/PhoneIcon.astro';
+---
+
 <footer class="bg-black text-primary-foreground">
   <div class="container mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center md:text-left">
@@ -8,10 +13,10 @@
             <a href="/" class="hover:opacity-80 transition-opacity">Inicio</a>
           </li>
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Producto</a>
+            <a href="#" class="hover:opacity-80 transition-opacity">Producto</a>
           </li>
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Nosotros</a>
+            <a href="#" class="hover:opacity-80 transition-opacity">Nosotros</a>
           </li>
         </ul>
       </div>
@@ -35,24 +40,12 @@
       <div>
         <h4 class="font-semibold mb-4">Contacto</h4>
         <ul class="space-y-2.5 text-sm">
-          <li
-            class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"
-          >
-            +51 123 456 789
-          </li>
-          <li
-            class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"
-          >
-            compras@perushop.com
-          </li>
+          <li class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"><PhoneIcon/> +51 123 456 789</li>
+          <li class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"><EmailIcon/> compras@perushop.com</li>
           <li class="pt-2">
             <div class="flex justify-center md:justify-start gap-3">
-              <a href="#" class="hover:opacity-80 transition-opacity"
-                >Instagram</a
-              >
-              <a href="#" class="hover:opacity-80 transition-opacity"
-                >Facebook</a
-              >
+              <a href="#" class="hover:opacity-80 transition-opacity">Instagram</a>
+              <a href="#" class="hover:opacity-80 transition-opacity">Facebook</a>
             </div>
           </li>
         </ul>

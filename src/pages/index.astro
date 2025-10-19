@@ -19,10 +19,10 @@ import Footer from "../components/Footer.astro";
       <div class="absolute inset-0 bg-black/30"></div>
 
       <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h2 class="text-primary-foreground md:text-7xl font-serif mb-6 text-balance">
+        <h2 class="text-3xl sm:text-4xl md:text-7xl text-primary-foreground font-serif mb-6 text-balance">
           Perú en tus manos
         </h2>
-        <p class="text-primary-foreground md:text-2xl text-muted-foreground mb-8 text-pretty">
+        <p class="text-lg sm:text-xl md:text-2xl text-primary-foreground mb-8 text-pretty">
           Tradición y Calidad en cada Producto
         </p>
       </div>
@@ -35,9 +35,11 @@ import Footer from "../components/Footer.astro";
           Nuestras Categorías
         </h2>
         <div class="h-1 w-32 bg-primary mx-auto mb-12"></div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 justify-center">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 justify-center"
+        >
           <!-- Categoría 1 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300" >
+          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
             <img
               src="/categoria/vajillas.jpg"
               alt="Vajillas"
@@ -76,16 +78,17 @@ import Footer from "../components/Footer.astro";
     </section>
 
     <!-- Técnicas y Culturas -->
-    <section class="py-20  text-center">
+    <section class="py-20 text-center">
       <div class="container mx-auto px-6 max-w-6xl">
         <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
           Técnicas y Culturas
         </h2>
-        <br>
+        <br />
         <p class="text-gray-700 mb-12 text-lg">
-          Detrás de cada pieza hay una historia profunda con las culturas del Perú
+          Detrás de cada pieza hay una historia profunda con las culturas del
+          Perú
         </p>
-        <br>
+        <br />
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-30">
           <!-- Cerámica de Chulucanas -->
@@ -109,7 +112,9 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Textiles Shipibo-Conibo -->
-          <div class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <div
+            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+          >
             <div class="p-5">
               <h3 class="text-lg font-bold mb-2 text-gray-900">
                 Textiles Shipibo - Conibo
@@ -127,7 +132,9 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Arte Piedra de Huamanga -->
-          <div class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <div
+            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+          >
             <div class="p-5">
               <h3 class="text-lg font-bold mb-2 text-gray-900">
                 Arte Piedra de Huamanga
@@ -145,7 +152,9 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Telar de Cintura -->
-          <div class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <div
+            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+          >
             <div class="p-5">
               <h3 class="text-lg font-bold mb-2 text-gray-900">
                 Telar de Cintura
@@ -174,14 +183,16 @@ import Footer from "../components/Footer.astro";
         <div class="w-24 h-[2px] bg-primary mx-auto mb-10"></div>
 
         <!-- Misión -->
-        <div class="flex flex-col md:flex-row items-center gap-40 mb-12">
+        <div class="flex flex-col md:flex-row items-center mb-12 gap-10 md:gap-40">
           <img
             src="nosotros/mision.jpg"
             alt="Misión"
-            class="w-full h-80 object-cover"
+            class="w-full h-80 object-cover order-2 md:order-1"
           />
-          <div class="text-left">
-            <h3 class="text-2xl font-semibold text-red mb-3 text-center ">
+          <div class="text-left order-1 md:order-2">
+            <h3
+              class="text-2xl font-semibold text-red mb-3 text-center"
+            >
               Misión
             </h3>
             <p class="text-gray-700 leading-relaxed text-justify">
@@ -194,14 +205,16 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <!-- Visión -->
-        <div class="flex flex-col md:flex-row-reverse items-center gap-50">
+        <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-40">
           <img
             src="nosotros/vision.jpg"
             alt="Visión"
-            class="w-full h-80 object-cover"
+            class="w-full h-80 object-cover order-2 md:order-1"
           />
-          <div class="text-left">
-            <h3 class="text-2xl font-semibold text-red mb-3 text-center">
+          <div class="text-left order-1 md:order-2">
+            <h3
+              class="text-2xl font-semibold text-red mb-3 text-center"
+            >
               Visión
             </h3>
             <p class="text-gray-700 leading-relaxed text-justify">

@@ -1,19 +1,18 @@
 ---
 const navItems = [
   { name: "Inicio", href: "/" },
-  { name: "Nosotros", href: "/nosotros" },
-  { name: "Productos", href: "/productos" },
+  { name: "Nosotros", href: "#" },
+  { name: "Productos", href: "#" },
 ];
 ---
 
-<header
-  class="bg-red text-primary-foreground fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border"
->
+<header class="bg-red text-primary-foreground fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
   <nav class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 flex-1 md:flex-none">
         <div class="text-3xl font-sans text-primary">
-          <span class="text-fareground">Peru</span><span class="text-especial">Shop]</span>        </div>
+          <span class="text-fareground">Peru</span><span class="text-especial">Shop]</span>       
+        </div>
       </a>
       <ul class="hidden md:flex items-center gap-8 mx-8 flex-1 justify-center">
         {
@@ -30,19 +29,14 @@ const navItems = [
         }
       </ul>
       <div class="flex items-center gap-4 justify-end flex-1 md:flex-none">
-        <a
-          href="/login"
-          class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block"
-        >
+        <a href="#" class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block">
           Ingresar
         </a>
-        <a
-          href="/register"
-          class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block"
+        <a href="#" class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block"
         >
           Registrar
         </a>
-        <button id="menu-toggle" class="md:hidden p-2 text-foreground">
+        <button id="menu-toggle" class="md:hidden p-2 text-primary-foreground">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -66,7 +60,7 @@ const navItems = [
             <li>
               <a
                 href={item.href}
-                class="text-foreground hover:text-primary transition-colors font-medium block py-2 px-4"
+                class="text-primary-foreground hover:text-primary transition-colors font-medium block py-2 px-4"
               >
                 {item.name}
               </a>
@@ -75,19 +69,24 @@ const navItems = [
         }
       </ul>
       <div class="flex flex-col gap-3 border-t border-border pt-4">
-        <a
-          href="/login"
-          class="text-foreground hover:text-primary transition-colors font-medium block py-2 px-4 text-center"
-        >
+        <a href="#" class="text-primary-foreground hover:text-primary transition-colors font-medium block py-2 px-4 text-center">
           Login
         </a>
-        <a
-          href="/register"
-          class="bg-accent text-accent-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium block text-center mx-4"
-        >
-          Register
+        <a href="#" class="bg-accent text-accent-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium block text-center mx-4 border-crema" >
+          Registrar
         </a>
       </div>
     </div>
   </nav>
 </header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle") as HTMLButtonElement | null;
+  const mobileMenu = document.getElementById("mobile-menu") as HTMLDivElement | null;
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    });
+  }
+</script>
