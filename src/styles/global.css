@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme inline {
+    --font-sans: "Inter",  sans-serif;
+    --color-red: #A82828;
+    --color-especial: #FFC862;
+    --color-primary-foreground: #ffffff;
+    --color-foreground: #2d2d2d;
+    --color-card-foreground: #2d2d2d;
+    --color-primary-red: #A82828;
+    --color-black: #000000;
+    --color-crema: #FFF6E6;
+    --radius: 0.5rem;
+}
