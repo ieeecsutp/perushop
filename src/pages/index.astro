@@ -1,232 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// Componentes de la página
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+// Secciones / páginas
+import Inicio from "../pages/Inicio.astro";
+import Categorias from "../pages/Categorias.astro";
+import TecnicasCulturas from "../pages/TecnicasCulturas.astro";
+import SobreNosotros from "../pages/SobreNosotros.astro";
 ---
 
 <Layout title="PeruShop">
   <Header />
+
   <main>
-    <section
-      class="relative h-[90vh] flex items-center justify-center overflow-hidden"
-    >
-      <div class="absolute inset-0 bg-gradient-to-br"></div>
-      <img
-        src="/portada.jpg"
-        alt="Portada"
-        class="absolute inset-0 w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl md:text-7xl text-primary-foreground font-serif mb-6 text-balance">
-          Perú en tus manos
-        </h2>
-        <p class="text-lg sm:text-xl md:text-2xl text-primary-foreground mb-8 text-pretty">
-          Tradición y Calidad en cada Producto
-        </p>
-      </div>
-    </section>
-
-    <!--  Categorías -->
-    <section class="py-20 bg-background text-center">
-      <div class="container mx-auto px-4 max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Nuestras Categorías
-        </h2>
-        <div class="h-1 w-32 bg-primary mx-auto mb-12"></div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 justify-center"
-        >
-          <!-- Categoría 1 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img
-              src="/categoria/vajillas.jpg"
-              alt="Vajillas"
-              class="w-full h-80 object-cover"
-            />
-            <div class="p-4 bg-black text-primary-foreground font-semibold">
-              Vajillas
-            </div>
-          </div>
-
-          <!-- Categoría 2 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img
-              src="/categoria/textiles.jpg"
-              alt="Textiles"
-              class="w-full h-80 object-coverr"
-            />
-            <div class="p-4 bg-black text-primary-foreground font-semibold">
-              Textiles
-            </div>
-          </div>
-
-          <!-- Categoría 3 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
-            <img
-              src="/categoria/ceramicas.jpg"
-              alt="Cerámicas"
-              class="w-full h-80 object-cover"
-            />
-            <div class="p-4 bg-black text-primary-foreground font-semibold">
-              Cerámicas
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Técnicas y Culturas -->
-    <section class="py-20 text-center">
-      <div class="container mx-auto px-6 max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Técnicas y Culturas
-        </h2>
-        <br />
-        <p class="text-gray-700 mb-12 text-lg">
-          Detrás de cada pieza hay una historia profunda con las culturas del
-          Perú
-        </p>
-        <br />
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-30">
-          <!-- Cerámica de Chulucanas -->
-          <div
-            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-          >
-            <div class="p-5">
-              <h3 class="text-lg font-bold mb-2 text-gray-900">
-                Cerámica de Chulucanas
-              </h3>
-              <p class="text-sm text-gray-700 mb-4">
-                Originaria de Piura, famosa por su técnica de “paleado” que crea
-                contrastes únicos de brillo y mate.
-              </p>
-            </div>
-            <img
-              src="tecnicas/ceramicaChu.jpg"
-              alt="Cerámica de Chulucanas"
-              class="w-full h-70 object-cover"
-            />
-          </div>
-
-          <!-- Textiles Shipibo-Conibo -->
-          <div
-            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-          >
-            <div class="p-5">
-              <h3 class="text-lg font-bold mb-2 text-gray-900">
-                Textiles Shipibo - Conibo
-              </h3>
-              <p class="text-sm text-gray-700 mb-4">
-                Reconocibles por sus complejos diseños geométricos “kené” que
-                representan la cosmovisión y la energía vital de la selva.
-              </p>
-            </div>
-            <img
-              src="tecnicas/textilesShi.jpg"
-              alt="Textiles Shipibo - Conibo"
-              class="w-full h-70 object-cover"
-            />
-          </div>
-
-          <!-- Arte Piedra de Huamanga -->
-          <div
-            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-          >
-            <div class="p-5">
-              <h3 class="text-lg font-bold mb-2 text-gray-900">
-                Arte Piedra de Huamanga
-              </h3>
-              <p class="text-sm text-g-700 mb-4">
-                Esculturas talladas en alabastro piedra de Huamanga, con motivos
-                religiosos y costumbristas de exquisito detalle.
-              </p>
-            </div>
-            <img
-              src="tecnicas/artePiedra.jpg"
-              alt="Arte Piedra de Huamanga"
-              class="w-full h-70 object-cover"
-            />
-          </div>
-
-          <!-- Telar de Cintura -->
-          <div
-            class="bg-crema rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-          >
-            <div class="p-5">
-              <h3 class="text-lg font-bold mb-2 text-gray-900">
-                Telar de Cintura
-              </h3>
-              <p class="text-sm text-gray-700 mb-4">
-                Una técnica precolombina utilizada por las artesanas de Ayacucho
-                y Cusco para crear telas de color con simbolismo.
-              </p>
-            </div>
-            <img
-              src="tecnicas/telarCintura.jpg"
-              alt="Telar de Cintura"
-              class="w-full h-70 object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre Nosotros -->
-    <section class="py-20 bg-crema">
-      <div class="container mx-auto px-6 text-center max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Sobre Nosotros
-        </h2>
-        <div class="w-24 h-[2px] bg-primary mx-auto mb-10"></div>
-
-        <!-- Misión -->
-        <div class="flex flex-col md:flex-row items-center mb-12 gap-10 md:gap-40">
-          <img
-            src="nosotros/mision.jpg"
-            alt="Misión"
-            class="w-full h-80 object-cover order-2 md:order-1"
-          />
-          <div class="text-left order-1 md:order-2">
-            <h3
-              class="text-2xl font-semibold text-red mb-3 text-center"
-            >
-              Misión
-            </h3>
-            <p class="text-gray-700 leading-relaxed text-justify">
-              Ofrecer una cuidadosa selección de productos peruanos auténticos y
-              de alta calidad a los consumidores, garantizando una experiencia
-              de compra eficiente y confiable que aumente la cultura del Perú en
-              cada entrega.
-            </p>
-          </div>
-        </div>
-
-        <!-- Visión -->
-        <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-40">
-          <img
-            src="nosotros/vision.jpg"
-            alt="Visión"
-            class="w-full h-80 object-cover order-2 md:order-1"
-          />
-          <div class="text-left order-1 md:order-2">
-            <h3
-              class="text-2xl font-semibold text-red mb-3 text-center"
-            >
-              Visión
-            </h3>
-            <p class="text-gray-700 leading-relaxed text-justify">
-              Ser el puente comercial que conecte la riqueza artesanal de los
-              productos peruanos con el exigente mercado latino, para que cada
-              consumidor pueda experimentar la autenticidad, calidad y
-              diversidad del Perú.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Inicio />
+    <Categorias />
+    <hr />
+    <TecnicasCulturas />
+    <SobreNosotros />
   </main>
+
   <Footer />
 </Layout>

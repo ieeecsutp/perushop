@@ -1,59 +1,90 @@
 ---
-import EmailIcon from './icons/EmailIcon.astro';
-import PhoneIcon from './icons/PhoneIcon.astro';
+import EmailIcon from "./icons/EmailIcon.astro";
+import PhoneIcon from "./icons/PhoneIcon.astro";
 ---
 
 <footer class="bg-black text-primary-foreground">
   <div class="container mx-auto px-4 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center md:text-left">
+    <!-- Grid principal: Navegación, Categorías y Contacto -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center md:text-left">
+      <!-- Navegación -->
       <div>
         <h4 class="font-semibold mb-4">Navegación</h4>
         <ul class="space-y-2 text-sm">
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Inicio</a>
+            <a href="#inicio" class="hover:opacity-80 transition-opacity"
+              >Inicio</a>
           </li>
           <li>
-            <a href="#" class="hover:opacity-80 transition-opacity">Producto</a>
+            <a href="#categorias" class="hover:opacity-80 transition-opacity"
+              >Categorías</a>
           </li>
           <li>
-            <a href="#" class="hover:opacity-80 transition-opacity">Nosotros</a>
+            <a href="#nosotros" class="hover:opacity-80 transition-opacity"
+              >Nosotros</a>
+          </li>
+          <li>
+            <a href="#tecnicas" class="hover:opacity-80 transition-opacity"
+              >Técnicas y Culturas</a>
           </li>
         </ul>
       </div>
 
+      <!-- Categorías -->
       <div>
         <h4 class="font-semibold mb-4">Categorías</h4>
         <ul class="space-y-2 text-sm">
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Vajillas</a>
+            <a href="#vajillas" class="hover:opacity-80 transition-opacity"
+              >Vajillas</a>
           </li>
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Textiles</a>
+            <a href="#textiles" class="hover:opacity-80 transition-opacity"
+              >Textiles</a>
           </li>
           <li>
-            <a href="/" class="hover:opacity-80 transition-opacity">Cerámicas</a
-            >
+            <a href="#ceramicas" class="hover:opacity-80 transition-opacity"
+              >Cerámicas</a>
           </li>
         </ul>
       </div>
 
+      <!-- Contacto -->
       <div>
         <h4 class="font-semibold mb-4">Contacto</h4>
         <ul class="space-y-2.5 text-sm">
-          <li class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"><PhoneIcon/> +51 123 456 789</li>
-          <li class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2"><EmailIcon/> compras@perushop.com</li>
+          <!-- Teléfono -->
+          <li
+            class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2">
+            <PhoneIcon /> +51 123 456 789
+          </li>
+
+          <!-- Email -->
+          <li
+            class="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-2">
+            <EmailIcon /> compras@perushop.com
+          </li>
+
+          <!-- Redes sociales -->
           <li class="pt-2">
             <div class="flex justify-center md:justify-start gap-3">
-              <a href="#" class="hover:opacity-80 transition-opacity">Instagram</a>
-              <a href="#" class="hover:opacity-80 transition-opacity">Facebook</a>
+              <a href="#" class="hover:opacity-80 transition-opacity"
+                >Instagram</a
+              >
+              <a href="#" class="hover:opacity-80 transition-opacity"
+                >Facebook</a
+              >
             </div>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm opacity-80">
-      <p>&copy; 2025 PeruShop]. Derechos reservados.</p>
+    <!-- Derechos reservados -->
+    <div
+      class="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm opacity-80">
+      <p>&copy; 2025 PeruShop]. Todos los derechos reservados.</p>
     </div>
   </div>
 </footer>

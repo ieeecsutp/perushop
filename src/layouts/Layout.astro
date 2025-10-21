@@ -1,28 +1,43 @@
----
-import "../styles/global.css";
----
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/flower.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-		<title></title>
-	</head>
-	<body class="bg-gray-50 text-gray-900">
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="PerúShop es una tienda online que ofrece productos peruanos auténticos y de alta calidad, promoviendo la cultura del Perú a través de una experiencia de compra eficiente, confiable y cercana."
+    />
+    <meta
+      name="keywords"
+      content="Ecommerce, Perú, productos peruanos, artesanía, cultura peruana, tienda online"
+    />
+    <meta name="author" content="@Grupo H" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <meta
+      property="og:title"
+      content="PerúShop | Productos peruanos auténticos"
+    />
+    <meta
+      property="og:description"
+      content="Ser el puente comercial que conecta la riqueza artesanal del Perú con el mercado latino, llevando autenticidad y calidad a cada consumidor."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>PerúShop | Productos peruanos auténticos</title>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <slot />
+  </body>
+</html>

@@ -1,46 +1,26 @@
-# Astro Starter Kit: Basics
+# PeruShop
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+## Descripción del proyecto
+Landing page para **PeruShop**, una tienda online peruana de productos auténticos, mostrando categorías, técnicas culturales y la sección "Sobre Nosotros". El proyecto está diseñado de manera **responsiva** para escritorio y móvil.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologías utilizadas
+- HTML
+- CSS
+- TailwindCSS
+- JavaScript
+- Astro
 
-## 🚀 Project Structure
+## Capturas de pantalla
 
-Inside of your Astro project, you'll see the following folders and files:
+### Vista de escritorio
+![Vista escritorio 1](src/assets/capturas/inicio.png)
+![Vista escritorio 2](src/assets/capturas/categorias.png)
+![Vista escritorio 1](src/assets/capturas/tecnias.png)
+![Vista escritorio 2](src/assets/capturas/culturas.png)
+![Vista escritorio 1](src/assets/capturas/mision.png)
+![Vista escritorio 2](src/assets/capturas/vision.png)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Archivo .fig exportado dentro del proyecto:
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+© 2025 PeruShop]. Todos los derechos reservados.
