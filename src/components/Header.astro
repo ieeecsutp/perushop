@@ -6,7 +6,7 @@ const navItems = [
 ];
 ---
 
-<header class="bg-red text-primary-foreground fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
+<header class="bg-red text-primary-foreground fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm  ">
   <nav class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 flex-1 md:flex-none">
@@ -30,12 +30,12 @@ const navItems = [
       </ul>
       <div class="flex items-center gap-4 justify-end flex-1 md:flex-none">
         <a href="#" class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block">
-          Ingresar
+          Iniciar Sesión
         </a>
-        <a href="#" class="text-primary-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block"
+        <button class="text-black bg-especial px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium hidden md:block"
         >
-          Registrar
-        </a>
+          Registrarse
+      </button>
         <button id="menu-toggle" class="md:hidden p-2 text-primary-foreground">
           <svg
             class="w-6 h-6"
@@ -70,11 +70,11 @@ const navItems = [
       </ul>
       <div class="flex flex-col gap-3 border-t border-border pt-4">
         <a href="#" class="text-primary-foreground hover:text-primary transition-colors font-medium block py-2 px-4 text-center">
-          Login
+          Iniciar sesión
         </a>
-        <a href="#" class="bg-accent text-accent-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium block text-center mx-4 border-crema" >
-          Registrar
-        </a>
+        <button class="bg-especial text-black px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium block text-center mx-4">
+        Registrarse
+        </button>
       </div>
     </div>
   </nav>

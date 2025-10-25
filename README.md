@@ -1,46 +1,96 @@
-# Astro Starter Kit: Basics
+# PeruShop
 
-```sh
-pnpm create astro@latest -- --template basics
+---
+
+## 💡 Tema y descripción del proyecto
+
+**PeruShop** es una tienda dedicada a la venta de productos artesanales basados en técnicas culturales de distintas partes del Perú.
+Este proyecto está construido con **Astro 5** y **TailwindCSS 4**, enfocado en rendimiento, estética y simplicidad.
+
+![Vista previa del sitio](./docs/perushop.jpg)
+
+---
+
+## 🎯Propósito del proyecto
+
+El objetivo principal de este sitio web es:
+- Presentar visualmente los productos tradicionales que contiene la tienda.
+- Brindar una experiencia rápida y fluida, optimizada para todos los dispositivos.
+- Servir como base escalable para futuras integraciones (como carrito de pedidos o pasarela de pagos).
+
+---
+
+## 🌐 Tecnologías utilizadas
+
+- **Astro 5** — Framework moderno orientado a contenido estático e islas interactivas.
+- **TailwindCSS 4** — Para un diseño limpio, responsivo y fácil de mantener.
+- **TypeScript** — Tipado estático y mejor DX.
+- **HTML**  — Estructura semántica y accesible.
+
+---
+
+### 🚀 Estructura general
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/                     # Imágenes
+│   ├── categorias/             
+│   ├── nosotros/
+│   └── tecnicas/
+│   
+├── src/                                       
+│   ├── assets/ 
+│   │  
+│   ├── components/             # Componentes Astro
+│   │   └── icons/              # Íconos SVG reutilizables
+│   │
+│   ├── layouts/                # Base del sitio
+│   │   
+│   ├── pages/                  # Ruta principal (index)
+│   │ 
+│   └── styles/                 # Archivo global de estilo
+│
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## ✅ Requisitos técnicos
 
-All commands are run from the root of the project, from a terminal:
+Se debe tener instalado las siguientes herramientas:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+- **Node.js** v18 o superior.
+- **pnpm** recomendado por Astro para mayor rendimiento. 
+- **Git** recomendado.
+- **Visual Studio Code** u otro editor moderno.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🧞 Ejecutar el proyecto
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/ieeecsutp/perushop.git
+cd perushop
+```
+
+### 2️⃣ Instalar dependencias
+Si usas **pnpm**:
+```bash
+pnpm install
+```
+
+### 3️⃣ Ejecutar en modo desarrollo
+```bash
+pnpm dev
+```
+Servidor local (por defecto http://localhost:4321).
+
+---
+
+### 📌 Créditos  
+Este proyecto fue desarrollado como parte del programa SparkLabs.  
+
+Desarrollado por **Cristopher Ponce**  
+GitHub: [Cristopher552] (https://github.com/Cristopher552) • [LinkedIn](www.linkedin.com/in/cristopher-ponce-pacheco-97615035a)
+
