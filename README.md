@@ -46,6 +46,8 @@ El objetivo principal de este sitio web es:
 │   ├── layouts/                # Base del sitio
 │   │   
 │   ├── pages/                  # Ruta principal (index)
+│   │
+│   ├── resource/               # Archivos del figma.
 │   │ 
 │   └── styles/                 # Archivo global de estilo
 │
@@ -92,5 +94,5 @@ Servidor local (por defecto http://localhost:4321).
 Este proyecto fue desarrollado como parte del programa SparkLabs.  
 
 Desarrollado por **Cristopher Ponce**  
-GitHub: [Cristopher552] (https://github.com/Cristopher552) • [LinkedIn](www.linkedin.com/in/cristopher-ponce-pacheco-97615035a)
+GitHub: [Cristopher552] (https://github.com/Cristopher552) • [LinkedIn](https://www.linkedin.com/in/cristopher-ponce-pacheco-97615035a/)
 

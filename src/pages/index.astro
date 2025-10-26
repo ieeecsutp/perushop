@@ -2,6 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+import ClockIcon from "../components/icons/ClockIcon.astro";
+import ShieldIcon from "../components/icons/ShieldIcon.astro";
+import PaymentIcon from "../components/icons/PaymentIcon.astro";
+import GuaranteeIcon from "../components/icons/GuaranteeIcon.astro";
+import ChevronIcon from "../components/icons/ChevronIcon.astro";
 ---
 
 <Layout title="PeruShop">
@@ -19,27 +25,38 @@ import Footer from "../components/Footer.astro";
       <div class="absolute inset-0 bg-black/30"></div>
 
       <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl md:text-7xl text-primary-foreground font-serif mb-6 text-balance">
+        <h2
+          class="text-3xl sm:text-4xl md:text-7xl text-primary-foreground font-serif mb-6 text-balance"
+        >
           Perú en tus manos
         </h2>
-        <p class="text-lg sm:text-xl md:text-2xl text-primary-foreground mb-8 text-pretty">
+        <p
+          class="text-lg sm:text-xl md:text-2xl text-primary-foreground mb-8 text-pretty"
+        >
           Tradición y Calidad en cada Producto
         </p>
       </div>
     </section>
 
     <!--  Categorías -->
-    <section class="py-20 bg-background text-center">
+    <section id="categorias" class="py-20 bg-background text-center">
       <div class="container mx-auto px-4 max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Nuestras Categorías
-        </h2>
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <span class="text-3xl">🏷️</span>
+          <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
+            Nuestras Categorías
+          </h2>
+          <span class="text-3xl">🏷️</span>
+        </div>
+        <div class="h-1 w-40 bg-red mx-auto mb-4"></div>
         <div class="h-1 w-32 bg-primary mx-auto mb-12"></div>
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 justify-center"
         >
           <!-- Categoría 1 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div
+            class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
             <img
               src="/categoria/vajillas.jpg"
               alt="Vajillas"
@@ -51,7 +68,9 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Categoría 2 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div
+            class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
             <img
               src="/categoria/textiles.jpg"
               alt="Textiles"
@@ -63,7 +82,9 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Categoría 3 -->
-          <div class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div
+            class="bg-card rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
+          >
             <img
               src="/categoria/ceramicas.jpg"
               alt="Cerámicas"
@@ -78,11 +99,17 @@ import Footer from "../components/Footer.astro";
     </section>
 
     <!-- Técnicas y Culturas -->
-    <section class="py-20 text-center">
+    <section id="tecnicas" class="py-20 text-center">
       <div class="container mx-auto px-6 max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Técnicas y Culturas
-        </h2>
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <span class="text-3xl">🎨</span>
+          <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
+            Técnicas y Culturas
+          </h2>
+          <span class="text-3xl">🎨</span>
+        </div>
+        <div class="h-1 w-40 bg-red mx-auto mb-4"></div>
+
         <br />
         <p class="text-gray-700 mb-12 text-lg">
           Detrás de cada pieza hay una historia profunda con las culturas del
@@ -175,27 +202,31 @@ import Footer from "../components/Footer.astro";
     </section>
 
     <!-- Sobre Nosotros -->
-    <section class="py-20 bg-crema">
+    <section id="nosotros" class="py-20 bg-crema">
       <div class="container mx-auto px-6 text-center max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-semibold text-red mb-2">
-          Sobre Nosotros
-        </h2>
-        <div class="w-24 h-[2px] bg-primary mx-auto mb-10"></div>
-
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <span class="text-3xl">ℹ️</span>
+          <h2 class="text-3xl md:text-4xl font-semibold text-red">
+            Sobre Nosotros
+          </h2>
+           <span class="text-3xl">ℹ️</span>
+        </div>
+        <div class="h-1 w-40 bg-red mx-auto mb-4"></div>
+        <br><br>
         <!-- Misión -->
-        <div class="flex flex-col md:flex-row items-center mb-12 gap-10 md:gap-40">
+        <div
+          class="flex flex-col md:flex-row items-center mb-12 gap-10 md:gap-40"
+        >
           <img
             src="nosotros/mision.jpg"
             alt="Misión"
             class="w-full h-80 object-cover order-2 md:order-1"
           />
           <div class="text-left order-1 md:order-2">
-            <h3
-              class="text-2xl font-semibold text-red mb-3 text-center"
-            >
+            <h3 class="text-2xl font-semibold text-red mb-3 text-center">
               Misión
             </h3>
-            <p class="text-gray-700 leading-relaxed text-justify">
+            <p class="text-gray-700 leading-relaxed text-center">
               Ofrecer una cuidadosa selección de productos peruanos auténticos y
               de alta calidad a los consumidores, garantizando una experiencia
               de compra eficiente y confiable que aumente la cultura del Perú en
@@ -205,25 +236,210 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <!-- Visión -->
-        <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-40">
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-40"
+        >
           <img
             src="nosotros/vision.jpg"
             alt="Visión"
             class="w-full h-80 object-cover order-2 md:order-1"
           />
           <div class="text-left order-1 md:order-2">
-            <h3
-              class="text-2xl font-semibold text-red mb-3 text-center"
-            >
+            <h3 class="text-2xl font-semibold text-red mb-3 text-center">
               Visión
             </h3>
-            <p class="text-gray-700 leading-relaxed text-justify">
+            <p class="text-gray-700 leading-relaxed text-center">
               Ser el puente comercial que conecte la riqueza artesanal de los
               productos peruanos con el exigente mercado latino, para que cada
               consumidor pueda experimentar la autenticidad, calidad y
               diversidad del Perú.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="preguntas" class="py-20 bg-gradient-to-b from-background to-crema/30">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-3 mb-2">
+          <span class="text-3xl">❓</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800">
+            Preguntas Frecuentes
+          </h2>
+          <span class="text-3xl">❓</span>
+          </div>
+          <div class="h-1 w-40 bg-red mx-auto mb-4"></div><br>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Encuentra respuestas a las dudas más comunes sobre nuestros
+            productos peruanos
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Pregunta 1 -->
+          <details
+            class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100 overflow-hidden"
+          >
+            <summary
+              class="list-none cursor-pointer p-6 flex justify-between items-center bg-gradient-to-r from-white to-amber-50 hover:from-amber-50 hover:to-amber-100 transition-all"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center"
+                >
+                  <ClockIcon />
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">
+                  ¿Cuáles son los tiempos de entrega?
+                </h3>
+              </div>
+              <ChevronIcon
+                className="group-open:rotate-180 transition-transform duration-300 flex-shrink-0"
+              />
+            </summary>
+            <div class="px-6 pb-6 ml-14 border-t border-amber-100 pt-4">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"
+                >
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Los tiempos de entrega varían según tu ubicación. Para envíos
+                  dentro de Lima: 2-3 días hábiles. Para provincias: 5-7 días hábiles.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Pregunta 2 -->
+          <details
+            class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100 overflow-hidden"
+          >
+            <summary
+              class="list-none cursor-pointer p-6 flex justify-between items-center bg-gradient-to-r from-white to-amber-50 hover:from-amber-50 hover:to-amber-100 transition-all"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center"
+                >
+                  <ShieldIcon />
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">
+                  ¿Los productos son auténticamente peruanos?
+                </h3>
+              </div>
+              <ChevronIcon
+                className="group-open:rotate-180 transition-transform duration-300 flex-shrink-0"
+              />
+            </summary>
+            <div class="px-6 pb-6 ml-14 border-t border-amber-100 pt-4">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"
+                >
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Absolutamente. Todos nuestros productos son 100% auténticos, elaborados
+                  por artesanos peruanos utilizando técnicas tradicionales
+                  transmitidas por generaciones. 
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Pregunta 3 -->
+          <details
+            class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100 overflow-hidden"
+          >
+            <summary
+              class="list-none cursor-pointer p-6 flex justify-between items-center bg-gradient-to-r from-white to-amber-50 hover:from-amber-50 hover:to-amber-100 transition-all"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center"
+                >
+                  <PaymentIcon />
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">
+                  ¿Qué métodos de pago aceptan?
+                </h3>
+              </div>
+              <ChevronIcon
+                className="group-open:rotate-180 transition-transform duration-300 flex-shrink-0"
+              />
+            </summary>
+            <div class="px-6 pb-6 ml-14 border-t border-amber-100 pt-4">
+              <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"
+                  >
+                  </div>
+                  <div>
+                    <p class="text-gray-700">
+                      Métodos Nacionales: Tarjetas de crédito/débito (Visa, MasterCard),
+                      transferencias bancarias, Yape, Plin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Pregunta 4 -->
+          <details
+            class="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-100 overflow-hidden"
+          >
+            <summary
+              class="list-none cursor-pointer p-6 flex justify-between items-center bg-gradient-to-r from-white to-amber-50 hover:from-amber-50 hover:to-amber-100 transition-all"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center"
+                >
+                  <GuaranteeIcon />
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">
+                  ¿Ofrecen garantía en los productos?
+                </h3>
+              </div>
+              <ChevronIcon
+                className="group-open:rotate-180 transition-transform duration-300 flex-shrink-0"
+              />
+            </summary>
+            <div class="px-6 pb-6 ml-14 border-t border-amber-100 pt-4">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"
+                >
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Sí, ofrecemos garantía de 30 días por defectos de fabricación. Para productos 
+                  frágiles como cerámicas y vajillas, recomendamos revisar el producto al momento
+                  de la entrega.
+                  
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div
+          class="mt-12 text-center bg-gradient-to-r from-amber-50 to-red-50 rounded-2xl p-8 border border-amber-200"
+        >
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            ¿No encontraste tu respuesta?
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Estamos aquí para ayudarte con cualquier consulta adicional
+          </p>
+          <button
+            class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            Contáctanos
+          </button>
         </div>
       </div>
     </section>
