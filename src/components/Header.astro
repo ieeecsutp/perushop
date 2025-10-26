@@ -1,4 +1,6 @@
 ---
+import MenuIcon from "./icons/MenuIcon.astro";
+
 const navItems = [
   { name: "Inicio", href: "/" },
   { name: "Nosotros", href: "#nosotros" },
@@ -6,6 +8,7 @@ const navItems = [
   { name: "Técnicas y Culturas", href: "#tecnicas" },
 ];
 ---
+
 
 <header class="bg-red text-primary-foreground fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm  ">
   <nav class="container mx-auto px-4 py-4">
@@ -38,18 +41,7 @@ const navItems = [
           Registrarse
       </button>
         <button id="menu-toggle" class="xl:hidden p-2 text-primary-foreground">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+          <MenuIcon />
         </button>
       </div>
     </div>
@@ -74,7 +66,7 @@ const navItems = [
           Iniciar sesión
         </a>
         <button class="bg-especial text-black px-4 py-2 rounded-md hover:bg-accent/90 transition-colors font-medium block text-center mx-4">
-        Registrarse
+          Registrarse
         </button>
       </div>
     </div>
